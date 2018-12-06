@@ -8,9 +8,12 @@ setup(
     version='0.1.0',
     description='Commandline user management utility',
     long_description=readme,
-    author='Perry Brandiezs',
-    author_email='pbrandiezs@gmail.com',
+    author='Your Name',
+    author_email='person@example.com',
     packages=find_packages('src'),
     package_dir={'': 'src'},
-    install_requires=[]
+    install_requires=[],
+    entry_points={
+        'console_scripts': 'hr=hr.cli:main',
+    },
 )
